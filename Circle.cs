@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioFiguraProgra
 {
-    internal class Circle : Shape
+    internal class Circle : Shape, IShapeAreaCalculator, IShapePerimeterCalculator
     {
         private float r;
 
@@ -20,9 +20,14 @@ namespace EjercicioFiguraProgra
 
         }
 
-        public override float CalculateArea()
+        public float CalculateArea()
         {
             return MathF.PI * r * r;
+        }
+
+        public float CalculatePerimeter()
+        {
+            return 2f * MathF.PI * r;
         }
     }
 }

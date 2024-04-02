@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioFiguraProgra
 {
-    internal abstract class Shape
+    internal interface IShapeAreaCalculator
     {
-        protected string type;
-
-        public string GetShapeType()
-        {
-            return type;
-        }
+        float CalculateArea();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioFiguraProgra
 {
-    internal class Rectangle : Shape
+    internal class Rectangle : Shape, IShapeAreaCalculator, IShapePerimeterCalculator
     {
         private float b;
         private float h;
@@ -22,9 +22,14 @@ namespace EjercicioFiguraProgra
             type = "Rectangle";
         }
 
-        public override float CalculateArea()
+        public float CalculateArea()
         {
             return b * h;
+        }
+
+        public float CalculatePerimeter()
+        {
+            return (b + h) * 2;
         }
     }
 }

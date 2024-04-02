@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioFiguraProgra
 {
-    internal class Triangle : Shape
+    internal class Triangle : Shape, IShapeAreaCalculator
     {
         private float b;
         private float h;
@@ -22,7 +22,7 @@ namespace EjercicioFiguraProgra
             type = "Triangle";
         }
 
-        public override float CalculateArea()
+        public float CalculateArea()
         {
             return b * h / 2;
         }
