@@ -10,7 +10,7 @@ namespace EjercicioFiguraProgra
     {
         public Shape? ShapeSelection()
         {
-            Shape shape = new Shape();
+            Shape shape;
 
             Console.WriteLine("Select a shape from the list");
             Console.WriteLine("1. Rectangle");

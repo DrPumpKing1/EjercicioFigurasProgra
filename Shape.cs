@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace EjercicioFiguraProgra
 {
-    internal class Shape
+    internal abstract class Shape
     {
-        protected string type; 
+        protected string type;
 
-        public virtual float CalculateArea()
-        {
-            return 0f;
-        }
+        public abstract float CalculateArea();
 
         public string GetShapeType()
         {
